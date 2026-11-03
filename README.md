@@ -1,18 +1,14 @@
-# PlayGround
+# NOCLIP // The Backrooms
 
-<!-- omgithub:readme:start -->
-## 🚀 Build, play, and remix with OMGithub
+A small browser-playable Backrooms co-op survival prototype. It is intentionally dependency-free so it can run inside the provided OMGithub runtime or any static web server.
 
-**Created using [OMGithub.com](https://omgithub.com).**
+## Play
 
-[![OMGithub](https://img.shields.io/badge/OMGithub-Open%20project-orange?style=for-the-badge)](https://omgithub.com/edupode/PlayGround)
-[![GitHub](https://img.shields.io/badge/GitHub-Source-181717?logo=github&style=for-the-badge)](https://github.com/edupode/PlayGround)
+Open `index.html` through the project server. Click **Enter the Backrooms**, then use:
 
-- 🎮 [Open the project](https://omgithub.com/edupode/PlayGround).
-- ✨ [Remix this project](https://omgithub.com/?remix=edupode%2FPlayGround).
-- 💻 [Explore the source](https://github.com/edupode/PlayGround).
-- 🛠️ [Check build runs](https://github.com/edupode/PlayGround/actions).
-- 🐛 [Report an issue](https://github.com/edupode/PlayGround/issues).
-- 👤 [Explore the creator's projects](https://omgithub.com/edupode).
-- 🌍 [Create with OMGithub](https://omgithub.com).
-<!-- omgithub:readme:end -->
+- **WASD** — move
+- **Mouse** — look around (click the scene to recapture the mouse)
+- **F** — toggle flashlight
+- **Touch controls** — available on narrow screens
+
+Find the glowing exit marker to reach the Hub. Avoid the **Hound**; when the flashlight is off, the **Smiler** may appear in the dark. The roster and nearby survivor figures are simulated local co-op peers, giving the game a multiplayer-ready presentation without requiring a backend service.

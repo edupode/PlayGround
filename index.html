@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>NOCLIP // The Backrooms</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="game-shell">
+    <canvas id="game" aria-label="First person Backrooms game"></canvas>
+    <div class="grain"></div>
+    <div class="vignette"></div>
+    <section id="title-card" class="panel">
+      <div class="eyebrow"><span class="dot"></span> CO-OP SURVIVAL / BUILD 0.3.7</div>
+      <h1>NOCLIP<span>//</span></h1>
+      <p class="subtitle">There is no map. There is no exit.<br>Only the hum knows the way back.</p>
+      <div class="rule"></div>
+      <div class="players"><span class="signal"></span><b>3 survivors</b> in this instance <span class="pings">● ● ●</span></div>
+      <button id="start-btn">ENTER THE BACKROOMS <span>↗</span></button>
+      <p class="hint">WASD to move &nbsp;·&nbsp; mouse to look &nbsp;·&nbsp; F flashlight</p>
+    </section>
+    <aside id="hud" class="hidden">
+      <div class="hud-top">
+        <div class="brand">NOCLIP<span>//</span><small>CO-OP INSTANCE</small></div>
+        <div class="status"><span class="rec-dot"></span> LIVE <i></i> <span id="clock">00:00</span></div>
+      </div>
+      <div class="location"><span class="level-tag">LEVEL 0</span><strong id="level-name">HABITATION</strong><small>THE YELLOW ROOMS</small></div>
+      <div class="objective"><span class="target">◎</span><div><small>CURRENT OBJECTIVE</small><strong id="objective">Locate an exit</strong></div></div>
+      <div class="team">
+        <small>INSTANCE MEMBERS <span>03/04</span></small>
+        <div class="member"><span class="avatar amber">M</span><b>marlow</b><em>YOU</em><i class="bar"><u></u></i></div>
+        <div class="member"><span class="avatar blue">K</span><b>kestrel</b><span class="online">● nearby</span></div>
+        <div class="member"><span class="avatar red">R</span><b>rue_404</b><span class="online dim">● exploring</span></div>
+      </div>
+      <div class="bottom-hud">
+        <div class="battery"><span>FLASHLIGHT</span><div class="battery-bar"><i id="battery-fill"></i></div><b id="battery-text">87%</b></div>
+        <div class="controls"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd><span>MOVE</span><kbd>F</kbd><span>LIGHT</span></div>
+      </div>
+      <div class="warning" id="warning">SIGNAL LOSS — ENTITY PROXIMITY</div>
+      <div class="crosshair"><i></i><i></i><i></i><i></i><b></b></div>
+      <div class="mobile-controls"><button data-key="w">▲</button><div><button data-key="a">◀</button><button data-key="s">▼</button><button data-key="d">▶</button></div><button id="mobile-light">◉</button></div>
+    </aside>
+    <div id="death" class="panel hidden"><div class="eyebrow danger">SIGNAL TERMINATED</div><h2>IT FOUND YOU.</h2><p>The yellow rooms have no corners.<br>Something else does.</p><button id="retry">RE-ENTER INSTANCE ↗</button></div>
+    <div id="level-toast" class="hidden"><span>LEVEL 1</span><b>HABITATION // THE HUB</b></div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
